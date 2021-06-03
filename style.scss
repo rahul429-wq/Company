@@ -240,6 +240,23 @@ section.section-2 {
     bottom: 20%;
     right: 10%;
   }
+  .circle {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    background-color: brown;
+  }
+  .circle-2 {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    bottom: -10%;
+    left: 30%;
+    background-color: rgb(125, 143, 197);
+    animation: circ2 3s infinite linear;
+    animation-delay: 0.1s;
+    transition: 0.2s;
+  }
 
   @keyframes tri1 {
     from {
@@ -247,6 +264,19 @@ section.section-2 {
     }
     to {
       transform: rotate(359deg);
+    }
+  }
+  @keyframes circ2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(359deg);
+      border-radius: 100%;
+      background-color: #0fcf00;
+    }
+    75% {
+      border-radius: 0%;
     }
   }
 }

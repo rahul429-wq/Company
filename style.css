@@ -338,6 +338,28 @@ section.section-2 .loader {
   right: 10%;
 }
 
+section.section-2 .circle {
+  width: 10px;
+  height: 10px;
+  position: relative;
+  background-color: brown;
+}
+
+section.section-2 .circle-2 {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  bottom: -10%;
+  left: 30%;
+  background-color: #7d8fc5;
+  -webkit-animation: circ2 3s infinite linear;
+          animation: circ2 3s infinite linear;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
 @keyframes tri1 {
   from {
     -webkit-transform: rotate(0deg);
@@ -346,6 +368,38 @@ section.section-2 .loader {
   to {
     -webkit-transform: rotate(359deg);
             transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes circ2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+    border-radius: 100%;
+    background-color: #0fcf00;
+  }
+  75% {
+    border-radius: 0%;
+  }
+}
+
+@keyframes circ2 {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(359deg);
+            transform: rotate(359deg);
+    border-radius: 100%;
+    background-color: #0fcf00;
+  }
+  75% {
+    border-radius: 0%;
   }
 }
 
