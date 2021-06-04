@@ -32,16 +32,17 @@ body {
 }
 
 header {
-  width: 80vw;
+  width: 100%;
   min-height: 10vh;
   margin: auto;
+  -webkit-transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   font-family: "Open Sans", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -52,9 +53,15 @@ header {
   z-index: 1;
 }
 
+header .logo {
+  -ms-flex-preferred-size: 350px;
+      flex-basis: 350px;
+}
+
 header .logo h1 {
   font-weight: 700;
   font-family: "Bebas Neue", cursive;
+  text-align: left;
 }
 
 header ul.nav-links {
@@ -76,14 +83,14 @@ header ul.nav-links a {
   display: block;
   font-weight: 500;
   padding: 10px 10px;
-  color: black;
+  color: #141414;
   -webkit-transition: 0.2s ease;
   transition: 0.2s ease;
 }
 
 header ul.nav-links li:hover a {
-  color: white;
-  background-color: black;
+  color: #fffdfe;
+  background-color: #141414;
 }
 
 header ul.nav-links ul.sub-menu {
@@ -288,6 +295,8 @@ section.section-2 .card-body {
   border-top: 5px solid white;
   margin: 30px;
   height: 350px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
 section.section-2 .card .img-div {
@@ -305,6 +314,7 @@ section.section-2 .card h1 {
 section.section-2 .card p {
   color: #999999;
   margin: 10px 0;
+  text-overflow: ellipsis;
 }
 
 section.section-2 .card-body:hover {
@@ -346,11 +356,13 @@ section.section-2 .circle {
 }
 
 section.section-2 .circle-2 {
-  width: 100px;
-  height: 100px;
+  width: 50px;
+  height: 50px;
   position: absolute;
-  bottom: -10%;
-  left: 30%;
+  bottom: 0%;
+  left: 0%;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   background-color: #7d8fc5;
   -webkit-animation: circ2 3s infinite linear;
           animation: circ2 3s infinite linear;
@@ -436,7 +448,6 @@ section.section-3 .first {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid black;
 }
 
 section.section-3 .second {
@@ -452,5 +463,174 @@ section.section-3 .second {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+}
+
+section.section-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: Montserrat, sans-serif;
+}
+
+section.section-4 .lo-anim {
+  width: 30px;
+  height: 30px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-animation: tri1 4s infinite linear;
+          animation: tri1 4s infinite linear;
+  -webkit-transition: 0.4s ease-in-out cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: 0.4s ease-in-out cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+section.section-5 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+section.section-5 footer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  background-color: #2c25b4;
+  padding: 40px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+section.section-5 footer .footers {
+  padding-top: 50px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin: auto;
+  color: #fffdfe;
+  font-family: "Source Sans Pro Regular", system-ui;
+}
+
+section.section-5 footer .footers li a {
+  color: #fffdfe;
+}
+
+section.section-5 footer .footers .col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-right: 5px;
+}
+
+section.section-5 footer .footers .col li {
+  padding: 10px 0px;
+}
+
+section.section-5 footer .footers .h-title {
+  border-bottom: 1px solid #fffdfe;
+  padding: 10px 10px;
+}
+
+section.section-5 footer .copyright {
+  position: absolute;
+  padding: 10px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fffdfe;
+}
+
+section.section-5 footer .copyright a {
+  color: #141414;
+}
+
+section.section-5 img {
+  width: 100%;
+}
+
+section.section-5 .rock {
+  width: 100%;
+  height: 50vh;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-animation: an 2s infinite linear;
+          animation: an 2s infinite linear;
+}
+
+#myBtn {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Fixed/sticky position */
+  bottom: 20px;
+  /* Place the button at the bottom of the page */
+  right: 30px;
+  /* Place the button 30px from the right */
+  z-index: 99;
+  /* Make sure it does not overlap */
+  border: none;
+  /* Remove borders */
+  outline: none;
+  /* Remove outline */
+  background-color: #2c25b4;
+  /* Set a background color */
+  color: white;
+  /* Text color */
+  cursor: pointer;
+  /* Add a mouse pointer on hover */
+  padding: 15px;
+  /* Some padding */
+  border-radius: 10px;
+  /* Rounded corners */
+  font-size: 18px;
+  /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #3730b9;
 }
 /*# sourceMappingURL=style.css.map */
