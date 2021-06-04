@@ -45,7 +45,7 @@ header {
   width: 100%;
   min-height: 10vh;
   margin: auto;
-  transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  // transition: 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   //   font-family: "Montserrat", sans-serif;
   font-family: "Open Sans", sans-serif;
   display: flex;
@@ -135,7 +135,8 @@ section.section-1 {
       object-fit: contain;
       width: 500px;
       height: 500px;
-      animation: an 2s infinite linear;
+      animation: an 3s infinite linear;
+
       transform-origin: top right;
     }
     @keyframes an {
@@ -157,7 +158,7 @@ section.section-1 {
     position: absolute;
     top: 25%;
     right: -5%;
-    animation: tri1 4s infinite linear;
+    // animation: tri1 4s infinite linear;
     transition: 0.4s ease-in-out cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transform-origin: center;
   }
@@ -168,8 +169,8 @@ section.section-1 {
     position: absolute;
     top: 40%;
     left: -5%;
-    animation: tri1 6s infinite linear;
-    animation-delay: 0.1s;
+    // animation: tri1 2s infinite linear;
+    // animation-delay: 0.1s;
     transition: 0.2s;
   }
   .triangle-img-3 {
@@ -179,8 +180,8 @@ section.section-1 {
     position: absolute;
     bottom: 20%;
     right: 5%;
-    animation: tri1 2s infinite linear;
-    animation-delay: 0.1s;
+    // animation: tri1 2s infinite linear;
+    // animation-delay: 0.1s;
     transition: 0.2s;
   }
 
@@ -204,7 +205,8 @@ section.section-2 {
     width: 250px;
     background-color: white;
     padding: 25px;
-    text-align: center;
+    text-align: center !important;
+    overflow: hidden;
     border-radius: 20px;
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -218,13 +220,18 @@ section.section-2 {
     height: 200px;
     .img-div img {
       margin: 30px 0;
+      text-align: center !important;
     }
   }
   .card h1 {
     margin: 10px 0;
+    text-align: center !important;
+    text-overflow: ellipsis;
   }
   .card p {
     color: rgb(153, 153, 153);
+    text-align: center !important;
+
     margin: 10px 0;
 
     text-overflow: ellipsis;
@@ -238,7 +245,7 @@ section.section-2 {
     height: 30px;
     object-fit: contain;
 
-    animation: tri1 5s infinite linear;
+    // animation: tri1 3s infinite linear;
     animation-delay: 0.1s;
     transition: 0.2s;
   }
@@ -250,7 +257,7 @@ section.section-2 {
   .loader {
     position: absolute;
     bottom: 20%;
-    right: 10%;
+    right: 0%;
   }
   .circle {
     width: 10px;
@@ -273,11 +280,11 @@ section.section-2 {
   }
 
   @keyframes tri1 {
-    from {
+    0% {
       transform: rotate(0deg);
     }
-    to {
-      transform: rotate(359deg);
+    100% {
+      transform: rotate(360deg);
     }
   }
   @keyframes circ2 {
@@ -333,7 +340,7 @@ section.section-4 {
     width: 30px;
     height: 30px;
     object-fit: contain;
-    animation: tri1 4s infinite linear;
+    // animation: tri1 4s infinite linear;
     transition: 0.4s ease-in-out cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transform-origin: center;
   }
