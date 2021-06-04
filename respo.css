@@ -60,6 +60,43 @@
 }
 
 @media (max-width: 480px) {
+  html {
+    -ms-scroll-snap-type: none !important;
+        scroll-snap-type: none !important;
+  }
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  header .logo {
+    width: 100% !important;
+    margin: auto;
+    text-align: center;
+    -ms-flex-preferred-size: 0;
+        flex-basis: 0;
+  }
+  header .logo h1 {
+    text-align: center;
+  }
+  header .nav-links {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .nav-links ul li a {
+    width: 100%;
+  }
   section.section-1 {
     -webkit-box-orient: vertical !important;
     -webkit-box-direction: normal !important;
