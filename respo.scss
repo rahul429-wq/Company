@@ -67,59 +67,69 @@
     left: 0;
     right: 0;
     z-index: 1;
+    background-color: white !important;
 
-    // .hamburger {
-    //   position: absolute;
-    //   right: 0;
-    //   top: 0;
-    //   width: 30px;
-    //   height: 30px;
-    //   border: 1px solid black;
+    .hamburger {
+      position: absolute;
+      right: 20px;
+      top: 16px;
 
-    // .ham-lines {
-    //   width: 35px;
-    //   height: 5px;
-    //   background-color: black;
-    //   margin: 6px 0;
-    // }
-    // .ham-lines::after {
-    //   content: "";
-    //   width: 35px;
-    //   height: 5px;
-    //   background-color: black;
-    //   margin: 6px 0;
-    // }
-    // .ham-lines::before {
-    //   content: "";
-    //   width: 35px;
-    //   height: 5px;
-    //   background-color: black;
-    //   margin: 6px 0;
-    // }
-    // }
+      // border: 1px solid black;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: space-between;
+      // align-items: center;
+
+      div {
+        content: "";
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+      }
+    }
     .logo {
       width: 100% !important;
       margin: auto;
+      background-color: white;
       text-align: center;
       flex-basis: 0;
       h1 {
-        text-align: center;
-      }
-    }
-    .nav-links {
-      width: 100%;
-      text-align: center;
-      margin: auto;
-      flex-direction: column;
-      ul li a {
-        width: 100%;
+        text-align: left;
+        // padding-left: 20px;
+        position: absolute;
+        top: 15px;
+        left: 15px;
       }
     }
   }
 
+  #nav-links {
+    display: none;
+    margin-top: 10vh;
+  }
+  .open {
+    display: block !important;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    background-color: white;
+    flex-direction: column;
+    display: block !important;
+    ul li a {
+      width: 100%;
+    }
+  }
   section.section-1 {
     flex-direction: column !important;
+    .left {
+      h1 {
+        font-size: 3.7rem;
+        padding-left: 35px;
+      }
+    }
   }
+
   section.section-2 {
     flex-direction: column !important;
   }
