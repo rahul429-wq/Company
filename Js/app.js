@@ -82,7 +82,7 @@ var hamburger = document.getElementById("hamburger");
 
 document.onclick = function (e) {
   if (e.target.id !== "hamburger" && e.target.id !== "open") {
-    navlinks.classList.toggle("open");
+    navlinks.classList.remove("open");
   }
 };
 
