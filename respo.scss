@@ -60,6 +60,12 @@
   html {
     scroll-snap-type: none !important;
   }
+  .logo {
+    padding: 0px !important;
+  }
+  ul.nav-links {
+    padding: 0px !important;
+  }
   header {
     width: 100%;
     flex-direction: column;
@@ -170,6 +176,12 @@
     scroll-snap-type: none !important;
   }
   header {
+    .logo {
+      padding: 0px !important;
+    }
+    ul.nav-links {
+      padding: 0px !important;
+    }
     width: 100%;
     flex-direction: column;
     position: fixed;

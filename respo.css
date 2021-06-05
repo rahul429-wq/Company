@@ -10,6 +10,12 @@
     -ms-scroll-snap-type: none !important;
         scroll-snap-type: none !important;
   }
+  .logo {
+    padding: 0px !important;
+  }
+  ul.nav-links {
+    padding: 0px !important;
+  }
   header {
     width: 100%;
     -webkit-box-orient: vertical;
@@ -134,6 +140,12 @@
     right: 0;
     z-index: 1;
     background-color: white !important;
+  }
+  header .logo {
+    padding: 0px !important;
+  }
+  header ul.nav-links {
+    padding: 0px !important;
   }
   header .hamburger {
     position: absolute;

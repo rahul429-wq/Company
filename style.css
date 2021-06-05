@@ -52,8 +52,7 @@ header {
 }
 
 header .logo {
-  -ms-flex-preferred-size: 350px;
-      flex-basis: 350px;
+  padding-left: 100px;
 }
 
 header .logo h1 {
@@ -69,6 +68,7 @@ header ul.nav-links {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 300px;
 }
 
 header ul.nav-links li {
