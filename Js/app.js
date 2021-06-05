@@ -80,9 +80,15 @@ function topFunction() {
 // hamburger
 var hamburger = document.getElementById("hamburger");
 
+document.onclick = function (e) {
+  if (e.target.id !== "hamburger" && e.target.id !== "open") {
+    navlinks.classList.toggle("open");
+  }
+};
+
 var navlinks = document.getElementById("nav-links");
-hamburger.addEventListener("click", function (e) {
-  console.log(e);
+hamburger.addEventListener("click", function () {
+  // console.log(e);
   // navlinks.style.display = "block";
   navlinks.classList.toggle("open");
 });

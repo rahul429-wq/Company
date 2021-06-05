@@ -79,6 +79,8 @@
     .hamburger {
       position: absolute;
       right: 20px;
+      cursor: pointer;
+
       top: 16px;
 
       // border: 1px solid black;
@@ -113,6 +115,7 @@
 
   #nav-links {
     width: 100%;
+
     display: none;
     margin-top: 10vh;
   }
@@ -195,6 +198,7 @@
       position: absolute;
       right: 20px;
       top: 16px;
+      cursor: pointer;
 
       // border: 1px solid black;
       // display: flex;

@@ -32,6 +32,7 @@
   header .hamburger {
     position: absolute;
     right: 20px;
+    cursor: pointer;
     top: 16px;
   }
   header .hamburger div {
@@ -151,6 +152,7 @@
     position: absolute;
     right: 20px;
     top: 16px;
+    cursor: pointer;
   }
   header .hamburger div {
     content: "";
