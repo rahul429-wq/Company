@@ -54,11 +54,11 @@
     <section class="contact-area">
       <div class="contact-card">
           <h1>Contact Us</h1>
-          <form style="width: 100%;" action="">
-        <input type="text" placeholder="Email" />
-        <textarea type="text" cols="30" rows="5" placeholder="Inquiry" /></textarea>
-        <button id="btn"><i class="fa fa-paper-plane"></i></button>
-        </form>
+          <!-- <form style="width: 100%;" action=""> -->
+        <input id="email" type="text" placeholder="Email" />
+        <textarea id="inquiry" type="text" cols="30" rows="5" placeholder="Inquiry" /></textarea>
+        <button onclick="send()" id="btn"><i class="fa fa-paper-plane"></i></button>
+        <!-- </form> -->
       </div>
     </section>
 
@@ -109,5 +109,41 @@
       <img class="rock" src="Sources/Rock_On_R-Angle_A1_0000-min.png" alt="" />
     </section>
     <!-- <footer></footer> -->
+    <!-- <script src="Js/app.js"></script> -->
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        var hamburger = document.getElementById("hamburger");
+        var navlinks = document.getElementById("nav-links");
+        hamburger.addEventListener("click", function () {
+        navlinks.classList.toggle("open");
+        });
+
+        function send(){
+            
+            var email=document.getElementById("email").value;
+            var inq=document.getElementById("inquiry").value;
+        Email.send({
+        Host : "smtp.gmail.com",
+        Username : "jpanelhosting@gmail.com",
+        Password : "harshadmehta",
+        To : 'jpanelhosting@gmail.com',
+        From : "Hii"+email,
+        Subject : "This is the subject",
+        Body : "And this is the body"+inq,
+        }).then(
+        message => alert(message+"Something wrong...")
+        );
+        }
+
+
+     
+        
+    </script>
+
+
+
+
   </body>
 </html>

@@ -29,6 +29,9 @@
     z-index: 1;
     background-color: white !important;
   }
+  header .section-2 img {
+    display: none !important;
+  }
   header .hamburger {
     position: absolute;
     right: 20px;
@@ -240,6 +243,9 @@
   }
   section .triangle-img-2 {
     left: 5% !important;
+  }
+  .section-2 img {
+    display: none !important;
   }
 }
 /*# sourceMappingURL=respo.css.map */

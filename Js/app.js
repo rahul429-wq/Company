@@ -82,15 +82,13 @@ var hamburger = document.getElementById("hamburger");
 
 var navlinks = document.getElementById("nav-links");
 
-hamburger.addEventListener("click", function (e) {
-  console.log(e);
-  // navlinks.style.display = "block";
+hamburger.addEventListener("click", function () {
   navlinks.classList.toggle("open");
 });
-document.onclick = function (e) {
-  if (e.target.id !== "hamburger" && e.target.id !== "nav-links") {
-    navlinks.classList.remove("open");
-  } else {
-  }
-};
-// hamburger
+// document.onclick = function (e) {
+// if (e.target.id !== "hamburger" && e.target.id !== "nav-links") {
+//   navlinks.classList.remove("open");
+// } else {
+//   navlinks.classList.add("open");
+// }
+// };
