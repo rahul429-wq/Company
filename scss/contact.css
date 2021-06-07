@@ -30,8 +30,6 @@
           flex-direction: column;
   border-radius: 30px;
   background: #dee6f1;
-  -webkit-box-shadow: 20px 20px 60px #b1becf, -20px -20px 60px #efffff;
-          box-shadow: 20px 20px 60px #b1becf, -20px -20px 60px #efffff;
 }
 
 .contact-area .contact-card input[type="text"],

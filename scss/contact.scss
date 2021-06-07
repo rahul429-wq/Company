@@ -3,18 +3,24 @@
   justify-content: center;
   align-items: center;
   .contact-card {
+    box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%) !important;
+  }
+  .contact-card {
     width: 80%;
     min-height: 50vh;
     margin: auto;
     padding: 20px;
     // background-color: wheat;
+    // box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     border-radius: 30px;
-    background: #dee6f1;
-    box-shadow: 20px 20px 60px #b1becf, -20px -20px 60px #efffff;
+    background: transparent;
+    // box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%) !important;
+    // box-shadow: 20px 20px 60px #b1becf, -20px -20px 60px #efffff;
+    // box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
     input[type="text"],
     textarea {
       width: 100%;

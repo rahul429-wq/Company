@@ -141,7 +141,8 @@
     .left {
       h1 {
         font-size: 3.7rem;
-        padding-left: 35px;
+        padding-left: 0px !important;
+        // padding-left: 35px;
       }
     }
   }
@@ -178,8 +179,30 @@
       left: 5% !important;
     }
   }
+
+  .about-us-card {
+    flex-direction: column;
+    text-align: center;
+    .about-us-card-right {
+      align-content: center;
+      p {
+        // overflow: scroll;
+      }
+    }
+  }
 }
 @media (max-width: 480px) {
+  .about-us-card {
+    flex-direction: column;
+    text-align: center;
+    .about-us-card-right {
+      align-content: center;
+      p {
+        overflow: scroll;
+      }
+    }
+  }
+
   html {
     scroll-snap-type: none !important;
   }
@@ -190,6 +213,7 @@
     ul.nav-links {
       padding: 0px !important;
     }
+
     width: 100%;
     flex-direction: column;
     position: fixed;
@@ -257,7 +281,8 @@
     .left {
       h1 {
         font-size: 3.7rem;
-        padding-left: 35px;
+        // padding-left: 35px;
+        padding-left: 0px !important;
       }
     }
   }

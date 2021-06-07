@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  width: 80vw;
+  margin: auto;
+  // margin-top: 10vh;
+  min-height: 100vh;
+  font-family: "Bebas Neue", cursive;
+  scroll-snap-align: center;
+  min-height: 100vh;
+  .about-card {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      min-height: 100vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      h1 {
+        font-size: 3.7rem;
+        padding-left: 70px;
+      }
+    }
+    .right {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 100%;
+      }
+      .about-img {
+        object-fit: contain;
+        width: 500px;
+        height: 500px;
+        animation: anabout 3s infinite linear;
+        transform-origin: top right;
+      }
+      @keyframes anabout {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+    }
+  }
+}
+section.about-us {
+  // background-color: rgb(61, 136, 136);
+  margin-top: 20px;
+  h1 {
+    color: black;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .main-about {
+    margin-top: 40px;
+  }
+  .about-us-card {
+    // margin-top: 20px;
+    // background-color: aquamarine;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    // width: 100%;
+    min-height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .about-us-card-right {
+      // padding: 20px;
+      width: 100%;
+      height: 40vh;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: left;
+
+      flex-direction: column;
+      padding: 10px;
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        // width: 60ch;
+        // text-overflow: scroll;
+      }
+    }
+    .about-us-card-left {
+      width: 100%;
+      height: 40vh;
+      img {
+        width: 100%;
+      }
+      .about-us-img {
+        object-fit: contain;
+        // width: 100%;
+        height: 100%;
+        // height: 40vh;
+      }
+    }
+  }
+}
