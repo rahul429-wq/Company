@@ -167,6 +167,7 @@ section.about-us .about-us-card .about-us-card-right p {
 section.about-us .about-us-card .about-us-card-left {
   width: 100%;
   height: 40vh;
+  padding: 10px;
 }
 
 section.about-us .about-us-card .about-us-card-left img {
