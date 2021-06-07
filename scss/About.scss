@@ -72,9 +72,12 @@ section.about-us {
   .about-us-card {
     // margin-top: 20px;
     // background-color: aquamarine;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    // box-shadow: rgb(4 5 11 / 57%) 0px 10px 15px -3px,
+    //   rgb(0 0 0 / 5%) 0px 4px 6px -2px;
     // width: 100%;
+    border-radius: 0px;
+    background: linear-gradient(225deg, #cad3e3, #f0faff);
+    box-shadow: -15px 15px 30px #a8b0bd, 15px -15px 30px #ffffff;
     min-height: 40vh;
     display: flex;
     justify-content: space-around;
